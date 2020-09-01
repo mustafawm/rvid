@@ -5,10 +5,6 @@ export const RQConfig = {
   }
 };
 
-export const endpoints = {
-  videos: 'URL_TO_FETCH_VIDEOS',
-};
-
 export const qKeys = {
   videos: 'app-videos',
 };

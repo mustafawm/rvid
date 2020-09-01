@@ -12,5 +12,8 @@ export function useFetchVideos() {
   return useQuery({
     queryKey: qKeys.videos,
     queryFn: fetchVideos,
+    config: {
+      refetchOnWindowFocus: false,
+    }
   });
 }

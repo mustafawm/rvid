@@ -13,8 +13,11 @@ export default function Playlist() {
     return <p>Something went wrong! {String(error)}</p>;
   }
   return (
-    <div>
-      <ImageGallery items={prepareData(data || [])} />
+    <div className="w-full flex justify-center mt-2">
+      <ImageGallery
+        additionalClass="max-w-screen-sm"
+        items={prepareData(data || [])}
+      />
     </div>
   )
 }
